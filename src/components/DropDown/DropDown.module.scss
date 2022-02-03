@@ -1,0 +1,21 @@
+@import '../../styles/style.scss';
+
+.dropdown {
+    height: 50px;
+    width: 130px;
+    margin: auto;
+    border: 1px solid $border-color;
+    border-radius: 6px;
+    @include textStyle(normal, 14px);
+    cursor: pointer;
+    &:hover {
+        background-color: $red-color;
+    }
+    &:focus {
+        background-color: white;
+    }
+}
+.dropdown:focus {
+    border: 1px solid $red-color;
+    outline: 0;
+}

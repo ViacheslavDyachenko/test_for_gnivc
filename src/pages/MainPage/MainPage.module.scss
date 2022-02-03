@@ -1,0 +1,24 @@
+@import '../../styles/style.scss';
+
+.word-block {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    flex-shrink: 0;
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    border-radius: 10px;
+    &__result {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        text-align: center;
+        margin-top: 20px;
+        @include textStyle(normal, 16px);
+    }
+}
